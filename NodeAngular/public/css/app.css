@@ -1,0 +1,12 @@
+body{
+	display: block;
+}
+
+.myViewPort{
+	width: 99%;
+	height: 99%;
+	background-color: #ffffff;
+	margin: 0 auto;
+	border: 1px solid blue;
+	overflow: auto; 
+}

@@ -1,0 +1,55 @@
+<html data-ng-app="inventoryApp">
+<head> 
+	<title>Node Angular App</title>
+	<!--[if lte IE 7]>
+      <script src="/path/to/json2.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" type="text/css" href="../resources/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/appcss.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/easyui.css">
+</head>
+<body>
+	<div class="container" data-ng-controller="initCtrl" data-ng-init='init()'>
+	<div class="panel-header" style="height:15px;">
+		<label><b>{{orgName}}</b></label><label class="pull-right"><b>{{clock}}</b></label>
+	</div>
+	<div class="panel-body">
+		<ul class="menuItems">
+			<li class="menuItem"><a href="#/home">Home</a></li>
+			<li class="menuItem"><a href="#/transact">Buy/Sell</a></li>
+			<li class="menuItem"><a href="#/stock">Stock</a></li>
+			<li class="menuItem"><a href="#/contacts">Contacts</a></li>
+			<li class="menuItem"><a href="#/admin">Admin</a></li>
+			<li class="menuItem pull-right"><a href="/logout">Logout</a></li>
+		</ul>
+		<p style="border: 1px inset #F9F9F9"></p>
+		<div style="height:90%;">
+			<div data-ui-view='upperPanel' style="height=50%;"></div>
+			<div data-ui-view='lowerPanel' style="height=50%;"></div>
+		</div>
+	</div>
+
+</div>
+<!-- libraries -->
+<!--script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script-->
+
+<script type="text/javascript" src="../resources/js/libs/jquery.min.js"></script>
+<script type="text/javascript" src="../resources/js/libs/angular.min.js"></script>
+<script type="text/javascript" src="../resources/js/libs/angular-ui-router.js"></script>
+<script type="text/javascript" src="../resources/js/libs/jquery.easyui.min.js"></script>
+<!-- app related scripts -->
+<script type="text/javascript" src="../resources/js/app/module.js"></script>
+<script type="text/javascript" src="../resources/js/app/directives.js"></script>
+<script type="text/javascript" src="../resources/js/app/utils.js"></script>
+<!-- controllers -->
+<script type="text/javascript" src="../resources/js/app/initCtrl.js"></script>
+<script type="text/javascript" src="../resources/js/app/stockCtrl.js"></script>
+<script type="text/javascript" src="../resources/js/app/service.js"></script>
+<script type="text/javascript" src="../resources/js/app/factory.js"></script>
+
+
+</body>
+
+<html>
